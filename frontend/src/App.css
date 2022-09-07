@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+  display: block;
+}
+
+body, h1 {
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+}
