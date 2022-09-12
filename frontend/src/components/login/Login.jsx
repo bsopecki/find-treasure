@@ -1,11 +1,13 @@
+import './Login.css'
+
 const Login = () => {
   return (
-    <section>
-      <h1>Ready to find your treasure?</h1>
+    <section className='form-wrapper'>
+      <h1 className='form-title'>Ready to find your treasure?</h1>
       <form className="form">
-        <label>What's your name?</label>
-        <input type="text" />
-        <button type="submit">Let's play!</button>
+        <label className='form-label'>What's your name?</label>
+        <input type="text" required placeholder='Name'/>
+        <button className="login-btn" type="submit">Let's play!</button>
       </form>
     </section>
   );
