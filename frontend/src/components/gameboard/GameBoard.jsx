@@ -1,3 +1,5 @@
+import './GameBoard.css'
+
 const GameBoard = () => {
   const dimension = {
     width: 5,
@@ -13,24 +15,13 @@ const GameBoard = () => {
     );
 
   return (
-    <div className="center">
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${dimension.width}, 100px)`,
-          gridTemplateRows: `repeat(${dimension.height}, 100px)`,
-          border: "#6034AD 2px solid",
-        }}
-      >
+    <div className="Gameboard">
+      <div className="gameboard-cell-wrapper">
         {cellsArray.map((row, i) =>
           row.map((col, j) => (
-            <div
+            <div className='gameboard-cell'
               style={{
-                border: "#6034AD 1px solid",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "inherit",
+                
               }}
               data-dimension={`${i}-${j}`}
               key={Math.random().toString()}
