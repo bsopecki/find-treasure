@@ -1,5 +1,3 @@
-import GameBoardCell from "./GameBoardCell";
-
 const GameBoard = () => {
   const dimension = {
     width: 5,
@@ -13,7 +11,7 @@ const GameBoard = () => {
         .fill()
         .map((_, indexW) => indexW)
     );
-  
+
   return (
     <div className="center">
       <div
@@ -21,12 +19,26 @@ const GameBoard = () => {
           display: "grid",
           gridTemplateColumns: `repeat(${dimension.width}, 100px)`,
           gridTemplateRows: `repeat(${dimension.height}, 100px)`,
-          border: '#6034AD 2px solid'
+          border: "#6034AD 2px solid",
         }}
       >
-        {cellsArray.map((row,i)=> row.map((col,j)=>(
-                <GameBoardCell data-dimension={`${i}-${j}`} key={Math.random().toString()}>{col}</GameBoardCell>
-        )))}
+        {cellsArray.map((row, i) =>
+          row.map((col, j) => (
+            <div
+              style={{
+                border: "#6034AD 1px solid",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "inherit",
+              }}
+              data-dimension={`${i}-${j}`}
+              key={Math.random().toString()}
+            >
+              {col}
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
