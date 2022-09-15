@@ -9,38 +9,12 @@
     {
       "id": 1,
       "treasure": "0-3",
+      "treasureValue": "T",
       "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
-    },
-    {
-      "id": 2,
-      "treasure": "2-2",
-      "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
-    },
-    {
-      "id": 3,
-      "treasure": "4-3",
-      "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
-    },
-    {
-      "id": 4,
-      "treasure": "1-2",
-      "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
-    },
-    {
-      "id": 5,
-      "treasure": "2-3",
-      "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
-    },
-    {
-      "id": 6,
-      "treasure": "3-1",
-      "closestPoints": ["0-2", "0-4", "1-2", "1-4"],
-      "closestPointsValue": 3
+      "closestPointsValue": 3,
+      "diagonalProximity":["1-4","0-1","2-2","2-3"],
+      "diagonalProximityValue":2,
+      "farestProximity":["0-0","2-1","2-4"]
     }
   ]
 }
