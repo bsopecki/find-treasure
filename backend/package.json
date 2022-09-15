@@ -1,0 +1,22 @@
+{
+  "name": "find-treasure-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json:server":"npx json-server -p 3500 -w db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsopecki/find-treasure.git"
+  },
+  "author": "B.Sopecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsopecki/find-treasure/issues"
+  },
+  "homepage": "https://github.com/bsopecki/find-treasure#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
